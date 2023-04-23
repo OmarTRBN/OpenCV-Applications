@@ -2,7 +2,7 @@ import os
 import cv2
 
 # Set the directory where the images are located
-directory = r"C:\Users\omart\Desktop\new-data"
+directory = r"directory"
 
 # Set the desired size for the images
 width = 640

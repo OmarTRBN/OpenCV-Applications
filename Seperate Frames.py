@@ -1,6 +1,6 @@
 import cv2
 
-filepath = r"C:\Users\omart\Desktop\IKA\Videos\20221111_151217.mp4"
+filepath = r"videofolder\video"
 
 # Open the video file
 video = cv2.VideoCapture(filepath)
@@ -26,7 +26,7 @@ while True:
 
   # If the frame skip counter is zero, save the current frame
   if frame_counter % 10 == 0:
-    cv2.imwrite(r"C:\Users\omart\Desktop\New folder\frame_{}.jpg".format(frame_counter), frame)
+    cv2.imwrite(r"imagefolder\image.jpg".format(frame_counter), frame)
 
   # Increment the frame counter and reset it to zero if it has reached the frame skip interval
   frame_counter = frame_counter + 1
